@@ -85,6 +85,43 @@
                 font-size: 1.3em;
             }
         }
+        .code-block {
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        padding: 15px;
+        margin: 15px 0;
+        font-family: monospace;
+        white-space: pre-wrap;
+        overflow-x: auto;
+    }
+
+    /* Стили для подразделов */
+    .subsection {
+        margin-top: 30px;
+    }
+
+    .subsection h3 {
+        color: #444;
+        margin-bottom: 15px;
+    }
+
+    /* Стили для списков в разделе */
+    .start-list {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .start-list li {
+        margin-bottom: 10px;
+    }
+
+    /* Стили для пояснений */
+    .explanation {
+        background-color: #f9f9f9;
+        border-left: 3px solid #ddd;
+        padding: 10px 15px;
+        margin: 15px 0;
+    }
     </style>
 </head>
 <body>
@@ -131,7 +168,186 @@
 
         <section id="start">
             <h2>С чего начать</h2>
-            <p>Да хз если честно :(</p>
+            
+            <div class="subsection">
+                <h3>1. Подготовка рабочего места</h3>
+                <div class="start-list">
+                    <p><strong>Что нам понадобится:</strong></p>
+                    <ul>
+                        <li><strong>Текстовый редактор:</strong> VS Code
+                            <ul>
+                                <li>Скачайте с сайта: code.visualstudio.com</li>
+                                <li>Это бесплатно и легко установить</li>
+                            </ul>
+                        </li>
+                        <li><strong>Браузер:</strong> Chrome или Firefox</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="subsection">
+                <h3>2. Создание структуры сайта (HTML)</h3>
+                <p>Базовая структура HTML:</p>
+                <div class="code-block">&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Мой первый сайт&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Здесь будет содержимое сайта --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</div>
+                
+                <div class="explanation">
+                    <p><strong>Что это значит:</strong></p>
+                    <ul>
+                        <li><code>&lt;!DOCTYPE html&gt;</code> — говорит браузеру, что это современный HTML</li>
+                        <li><code>&lt;html lang="ru"&gt;</code> — указывает, что сайт на русском языке</li>
+                        <li><code>&lt;head&gt;</code> — тут хранятся настройки страницы</li>
+                        <li><code>&lt;body&gt;</code> — тут будет всё, что видит пользователь</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="subsection">
+                <h3>3. Оформление сайта (CSS)</h3>
+                <p>Базовые стили:</p>
+                <div class="code-block">/* Основные стили страницы */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Стили для заголовков */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #444;
+}</div>
+            </div>
+            <div class="subsection">
+                <h3>4. Основные теги HTML</h3>
+                <p>Теги - это строительные блоки вашего сайта. Вот основные теги, которые вы будете использовать чаще всего:</p>
+                
+                <table class="tags-table">
+                    <tr>
+                        <th>Тег</th>
+                        <th>Описание</th>
+                        <th>Пример использования</th>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;div&gt;</td>
+                        <td>Контейнер для группировки элементов</td>
+                        <td>&lt;div class="block"&gt;Содержимое блока&lt;/div&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;p&gt;</td>
+                        <td>Параграф текста</td>
+                        <td>&lt;p&gt;Это параграф текста.&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;h1&gt; - &lt;h6&gt;</td>
+                        <td>Заголовки разных уровней</td>
+                        <td>&lt;h1&gt;Главный заголовок&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;a&gt;</td>
+                        <td>Ссылка на другую страницу</td>
+                        <td>&lt;a href="страница.html"&gt;Текст ссылки&lt;/a&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">&lt;img&gt;</td>
+                        <td>Изображение</td>
+                        <td>&lt;img src="фото.jpg" alt="Описание"&gt;</td>
+                    </tr>
+                </table>
+        
+                <div class="explanation">
+                    <p><strong>Важно знать:</strong></p>
+                    <ul>
+                        <li>Большинство тегов имеют открывающий и закрывающий элементы</li>
+                        <li>Теги можно вкладывать друг в друга</li>
+                        <li>Каждый тег может иметь атрибуты (например, class, id, style)</li>
+                    </ul>
+                </div>
+        
+                <div class="code-block">
+&lt;body&gt;
+    &lt;div class="header"&gt;
+        &lt;h1&gt;Название сайта&lt;/h1&gt;
+        &lt;p&gt;Описание сайта&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="content"&gt;
+        &lt;h2&gt;Заголовок раздела&lt;/h2&gt;
+        &lt;p&gt;Текст раздела&lt;/p&gt;
+        &lt;img src="картинка.jpg" alt="Описание картинки"&gt;
+        &lt;a href="https://example.com"&gt;Ссылка на сайт&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</div>
+        
+                <p>Это пример структуры содержимого body. Обратите внимание, как теги вкладываются друг в друга, создавая иерархию элементов.</p>
+            </div>
+        
+            <div class="subsection">
+                <h3>6. Атрибуты тегов</h3>
+                <p>Атрибуты позволяют настраивать теги и добавлять им дополнительные свойства:</p>
+        
+                <table class="tags-table">
+                    <tr>
+                        <th>Атрибут</th>
+                        <th>Описание</th>
+                        <th>Пример</th>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">class</td>
+                        <td>Определяет класс для стилизации</td>
+                        <td>&lt;div class="container"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">id</td>
+                        <td>Уникальный идентификатор элемента</td>
+                        <td>&lt;div id="header"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">style</td>
+                        <td>Встроенные CSS стили</td>
+                        <td>&lt;p style="color: blue;"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">href</td>
+                        <td>Адрес ссылки</td>
+                        <td>&lt;a href="https://site.com"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="tag-name">src</td>
+                        <td>Путь к изображению или файлу</td>
+                        <td>&lt;img src="photo.jpg"&gt;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="subsection">
+                <h3>5. Советы для начинающих</h3>
+                <div class="start-list">
+                    <ul>
+                        <li><strong>Начинайте с малого:</strong> Сначала создайте простую структуру, добавляйте стили постепенно</li>
+                        <li><strong>Экспериментируйте:</strong> Меняйте цвета и размеры, пробуйте разные шрифты</li>
+                        <li><strong>Используйте инструменты:</strong> VS Code подсвечивает ошибки, браузер показывает результат</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 </body>
