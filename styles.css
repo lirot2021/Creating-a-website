@@ -1,0 +1,44 @@
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Очень простая стилизация для кода */
+code {
+    background: #f9f9f9;
+}
+
+/* Небольшие отступы для списков */
+ul {
+    padding-left: 20px;
+}
+
+/* Базовые отступы для секций */
+section {
+    margin-bottom: 30px;
+}
