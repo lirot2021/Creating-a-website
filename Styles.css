@@ -1,0 +1,171 @@
+/* Основные стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Навигационное меню */
+nav {
+    background-color: #2c3e50;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку если меню не помещается */
+    -webkit-overflow-scrolling: touch; /* Плавная прокрутка на iOS */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap; /* Запрещаем перенос пунктов меню */
+    min-width: min-content; /* Минимальная ширина по содержимому */
+}
+
+nav li {
+    margin: 0 8px; /* Уменьшаем отступы между пунктами */
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 10px; /* Уменьшаем padding */
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-size: 14px; /* Чуть уменьшаем размер шрифта */
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+/* Медиа-запрос для очень маленьких экранов */
+@media (max-width: 480px) {
+    nav {
+        padding: 8px 0;
+    }
+    
+    nav li {
+        margin: 0 5px;
+    }
+    
+    nav a {
+        padding: 5px 8px;
+        font-size: 13px;
+    }
+    
+    body {
+        padding: 15px;
+    }
+}
+
+/* Остальные стили остаются без изменений */
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* ... остальной CSS без изменений ... */
+
+/* Заголовки */
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 25px;
+}
+
+h3 {
+    color: #16a085;
+    margin-top: 20px;
+}
+
+/* Основной контент */
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Картинки */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border: 1px solid #ddd;
+}
+
+/* Специальные блоки */
+div#constructor,
+div#cms,
+div#html&css {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+}
+
+div#cms {
+    border-left-color: #e74c3c;
+}
+
+div#html&css {
+    border-left-color: #2ecc71;
+}
+
+/* Ссылки в тексте */
+a:not(nav a) {
+    color: #2980b9;
+    text-decoration: none;
+    border-bottom: 1px dotted #2980b9;
+}
+
+a:not(nav a):hover {
+    color: #3498db;
+    border-bottom: 1px solid #3498db;
+}
+
+/* Цитаты и выделенный текст */
+b, strong {
+    color: #e74c3c;
+}
+
+/* Подвал (если будет добавлен) */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    color: #7f8c8d;
+    border-top: 1px solid #ddd;
+}
