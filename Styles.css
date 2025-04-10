@@ -118,9 +118,7 @@ img {
 }
 
 /* Специальные блоки */
-div#constructor,
-div#cms,
-div#html&css {
+#constructor #cms #htmlcss {
     background-color: white;
     padding: 20px;
     margin: 20px 0;
