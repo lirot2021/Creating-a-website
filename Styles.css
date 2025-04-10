@@ -2,6 +2,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    color: #333;
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
@@ -71,12 +72,10 @@ nav a:hover {
 }
 
 
-
 /* ... остальной CSS без изменений ... */
 
 /* Заголовки */
 h1 {
-    color: #f5f5f5;
     border-bottom: 2px solid #3498db;
     padding-bottom: 10px;
     margin-top: 30px;
@@ -118,22 +117,6 @@ img {
 }
 
 /* Специальные блоки */
-#constructor #cms #htmlcss {
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-left: 4px solid #3498db;
-}
-
-div#cms {
-    border-left-color: #e74c3c;
-}
-
-div#html&css {
-    border-left-color: #2ecc71;
-}
 
 /* Ссылки в тексте */
 a:not(nav a) {
@@ -163,4 +146,21 @@ footer {
 body{
     color:#f5f5f5;
     
+}
+#constructor, #cms, #htmlandcss{
+    color: black;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+}
+
+div#cms {
+    border-left-color: #e74c3c;
+}
+
+div#htmlandcss {
+    border-left-color: #2ecc71;
 }
